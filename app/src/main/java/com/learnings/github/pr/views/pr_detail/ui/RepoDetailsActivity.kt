@@ -1,11 +1,11 @@
-package com.learnings.github.pr.ui.pr_detail
+package com.learnings.github.pr.views.pr_detail
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.learnings.github.pr.R
-import com.learnings.github.pr.ui.pr_detail.adapter.SectionsPagerAdapter
+import com.learnings.github.pr.views.pr_detail.adapter.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.activity_repo_details.*
 
 class RepoDetailsActivity : AppCompatActivity() {

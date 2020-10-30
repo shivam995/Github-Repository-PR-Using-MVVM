@@ -1,4 +1,4 @@
-package com.learnings.github.pr.ui.pr_detail.adapter
+package com.learnings.github.pr.views.pr_detail.adapter
 
 import android.content.Context
 import android.text.format.DateUtils

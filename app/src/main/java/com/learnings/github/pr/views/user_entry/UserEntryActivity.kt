@@ -1,11 +1,11 @@
-package com.learnings.github.pr.ui.user_entry
+package com.learnings.github.pr.views.user_entry
 
 import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
 import com.learnings.github.pr.R
-import com.learnings.github.pr.ui.pr_detail.RepoDetailsActivity
+import com.learnings.github.pr.views.pr_detail.RepoDetailsActivity
 import kotlinx.android.synthetic.main.activity_user_entry.*
 
 class UserEntryActivity : AppCompatActivity() {

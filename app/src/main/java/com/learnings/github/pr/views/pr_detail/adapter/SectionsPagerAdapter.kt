@@ -1,4 +1,4 @@
-package com.learnings.github.pr.ui.pr_detail.adapter
+package com.learnings.github.pr.views.pr_detail.adapter
 
 import android.content.Context
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.learnings.github.pr.R
 import com.learnings.github.pr.data.enums.PRStatus
-import com.learnings.github.pr.ui.pr_detail.ui.main.PRListFragment
+import com.learnings.github.pr.views.pr_detail.ui.main.PRListFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.tab1_title,

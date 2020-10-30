@@ -1,4 +1,4 @@
-package com.learnings.github.pr.ui.pr_detail.ui.main
+package com.learnings.github.pr.views.pr_detail.ui.main
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.learnings.github.pr.R
 import com.learnings.github.pr.data.enums.PRStatus
 import com.learnings.github.pr.data.model.PullRequestModel
-import com.learnings.github.pr.ui.pr_detail.RepoDetailsActivity
-import com.learnings.github.pr.ui.pr_detail.adapter.PullRequestListAdapter
-import com.learnings.github.pr.ui.pr_detail.viewmodel.PRDetailViewModel
+import com.learnings.github.pr.views.pr_detail.RepoDetailsActivity
+import com.learnings.github.pr.views.pr_detail.adapter.PullRequestListAdapter
+import com.learnings.github.pr.views.pr_detail.viewmodel.PRDetailViewModel
 import kotlinx.android.synthetic.main.fragment_pr_list.*
 
 class PRListFragment : Fragment() {

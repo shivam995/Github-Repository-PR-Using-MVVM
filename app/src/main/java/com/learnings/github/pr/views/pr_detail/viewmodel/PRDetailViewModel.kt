@@ -1,4 +1,4 @@
-package com.learnings.github.pr.ui.pr_detail.viewmodel
+package com.learnings.github.pr.views.pr_detail.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

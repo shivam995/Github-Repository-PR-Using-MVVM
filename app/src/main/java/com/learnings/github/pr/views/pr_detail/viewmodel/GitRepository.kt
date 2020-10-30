@@ -1,4 +1,4 @@
-package com.learnings.github.pr.ui.pr_detail.viewmodel
+package com.learnings.github.pr.views.pr_detail.viewmodel
 
 import com.learnings.github.pr.data.enums.PRStatus
 import com.learnings.github.pr.data.model.PullRequestModel
