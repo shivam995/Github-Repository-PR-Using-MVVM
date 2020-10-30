@@ -7,15 +7,15 @@ data class PullRequestModel (
 
     @SerializedName("number")
     
-    private val number: Int? = null,
+     val number: Int? = null,
 
     @SerializedName("title")
     
-    private val title: String? = null,
+     val title: String? = null,
 
     @SerializedName("state")
-    private val state: String? = null,
+     val state: String? = null,
 
     @SerializedName("created_at")
-    private val createdAt: String? = null
+     val createdAt: String? = null
 )

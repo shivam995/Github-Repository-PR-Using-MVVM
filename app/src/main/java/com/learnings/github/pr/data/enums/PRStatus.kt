@@ -1,6 +1,6 @@
 package com.learnings.github.pr.data.enums
 
 enum class PRStatus {
-    Open,
-    Close
+    open,
+    closed
 }

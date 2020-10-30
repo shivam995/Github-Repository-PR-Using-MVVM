@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Github Repo PR</string>
+    <string name="app_name">Github Pull Request</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -14,4 +14,12 @@
     <string name="tab1_title">Open</string>
     <string name="tab2_title">Close</string>
     <string name="generic_error_user_input">All fields are mandatory</string>
+    <string name="error_fetch">Something went wrong, please try again!</string>
+    <string name="pull_title">Pull Title:</string>
+    <string name="created">Created:</string>
+    <string name="pull_status">Pull Status:</string>
+    <string name="pull_number">Pull Number:</string>
+    <string name="repo_name">Repo Name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="submit">Submit</string>
 </resources>

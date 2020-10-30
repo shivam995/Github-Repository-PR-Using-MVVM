@@ -8,8 +8,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.GithubRepoPR.AppBarOverlay">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/title"
@@ -19,12 +18,17 @@
             android:minHeight="?actionBarSize"
             android:padding="@dimen/appbar_padding"
             android:text="@string/title_pr_detail"
+            android:textColor="@color/white"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/lightPrimary"
+            app:tabIndicatorColor="@color/dark_red"
+            app:tabIndicatorHeight="4dp"
             android:background="?attr/colorPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
 

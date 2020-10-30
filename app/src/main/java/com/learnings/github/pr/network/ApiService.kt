@@ -7,13 +7,17 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 /**
+ * Created by Shivam Jaiswal on 30/10/20.
+ */
+
+/**
  * Used for declaring Rest APIs
  */
 interface ApiService {
 
     //ConfigRestService
-    @GET("repos/{ownerName}/{repoName}/issues?state={state}")
-    fun getOpenPullRequestList(@Path("ownerName") ownerName: String?,
-                                    @Query(value = "repoName") repoName: String?,
-                                    @Query(value = "state") state: String?): Call<List<PullRequestModel>>
+    @GET("repos/{ownerName}/{repoName}/issues")
+    fun getPullRequestList(@Path("ownerName") ownerName: String,
+                           @Path("repoName") repoName: String,
+                           @Query("state") state: String?): Call<List<PullRequestModel>>
 }

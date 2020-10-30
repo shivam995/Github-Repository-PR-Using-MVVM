@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit
  */
 
 /**
- * Should contain only Okhttp client related configuration
+ * Should contain only Okhttp/retrofit client related configuration
  */
 object RetrofitService {
     var retrofit: Retrofit

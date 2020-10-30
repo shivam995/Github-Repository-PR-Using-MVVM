@@ -1,10 +1,12 @@
-package com.learnings.github.pr.ui.pr_detail.ui.main
+package com.learnings.github.pr.ui.pr_detail.adapter
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.learnings.github.pr.R
+import com.learnings.github.pr.data.enums.PRStatus
+import com.learnings.github.pr.ui.pr_detail.ui.main.PRListFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.tab1_title,
@@ -12,13 +14,21 @@ private val TAB_TITLES = arrayOf(
 )
 
 
-class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
+class SectionsPagerAdapter(private val context: Context, private val ownerName: String, private val repoName: String, fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     override fun getItem(position: Int): Fragment {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PRListFragment.newInstance(position + 1)
+
+        return PRListFragment.getInstance(ownerName, repoName, getPrState(position))
+    }
+
+    private fun getPrState(position: Int): PRStatus {
+
+        return when (position) {
+            0 -> PRStatus.open
+            1 -> PRStatus.closed
+            else -> PRStatus.open
+        }
     }
 
     override fun getPageTitle(position: Int): CharSequence? {

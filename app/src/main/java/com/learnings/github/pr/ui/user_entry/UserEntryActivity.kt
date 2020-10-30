@@ -1,4 +1,4 @@
-package com.learnings.github.pr.ui.login
+package com.learnings.github.pr.ui.user_entry
 
 import android.os.Bundle
 import androidx.annotation.StringRes
@@ -22,7 +22,7 @@ class UserEntryActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else {
-                showLoginFailed(R.string.generic_error_user_input)
+                showToastMessage(R.string.generic_error_user_input)
             }
         }
 
@@ -32,8 +32,8 @@ class UserEntryActivity : AppCompatActivity() {
         return (!ownerName.text.toString().isEmpty() && !repoName.text.toString().isEmpty())
     }
 
-    private fun showLoginFailed(@StringRes errorString: Int) {
-        Toast.makeText(applicationContext, errorString, Toast.LENGTH_SHORT).show()
+    private fun showToastMessage(@StringRes message: Int) {
+        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
 
     /**
